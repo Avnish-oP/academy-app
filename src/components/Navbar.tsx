@@ -8,7 +8,7 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("sticky top-2 inset-x-0 max-w-2xl mx-auto z-50", className)}//if navbar is not sticky then remove sticky class
+      className={cn("fixed top-2 inset-x-0 max-w-2xl mx-auto z-50", className)}//if navbar is not sticky then remove sticky class
     >
       <Menu setActive={setActive}>
         <Link href={"/"}>
