@@ -23,25 +23,25 @@ function Navbar({ className }: { className?: string }) {
               title="Class IX"
               href="/courses/class-ix"
               description="Prepare for tech interviews like never before."
-              src="/images/algochurn.png"
+              src="https://source.unsplash.com/random/300x303"
             />
             <ProductItem
               title="Class X"
               href="https://tailwindmasterkit.com"
               description="Production ready Tailwind css components for your next project"
-              src="/images/tailwind-master-kit.png"
+              src="https://source.unsplash.com/random/300x304"
             />
             <ProductItem
               title="Class XI"
               href="https://gomoonbeam.com"
               description="Never write from scratch again. Go from idea to blog in minutes."
-              src="/images/moonbeam.png"
+              src="https://source.unsplash.com/random/300x305"
             />
             <ProductItem
               title="Class XII"
               href="https://userogue.com"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-              src="/images/rogue.png"
+              src="https://source.unsplash.com/random/300x306"
             />
           </div>
         </MenuItem>
