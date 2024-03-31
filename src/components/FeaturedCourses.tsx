@@ -2,6 +2,7 @@
 import React from "react";
 import { BackgroundGradient } from "./ui/background-gradient";
 import Link from "next/link";
+import { nanoid } from "nanoid";
 
 function FeaturedCourses() {
   const Courses = [
@@ -37,11 +38,16 @@ function FeaturedCourses() {
         </p>
       </div>
       <div className="mt-16 flex justify-center items-center mx-auto w-full flex-wrap">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20"
+          
+        >
           {Courses.map((course, index) => (
-            <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
+            <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900"
+            key={nanoid()}
+            >
               <div
-                key={index}
+                
                 className="flex flex-col bg-white dark:bg-zinc-900 overflow-hidden h-full rounded-[22px] shadow-lg w-full"
               >
                 <img
